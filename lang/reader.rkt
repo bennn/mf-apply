@@ -16,7 +16,7 @@
 (define-values (mf-apply-read mf-apply-read-syntax mf-apply-get-info)
   (make-meta-reader
     'mf-apply
-    "mf-apply"
+    "language path"
     (λ (bstr)
       (let* ([str (bytes->string/latin-1 bstr)]
              [sym (string->symbol str)])
